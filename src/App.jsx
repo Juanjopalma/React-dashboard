@@ -1,14 +1,15 @@
-import { useState } from 'react'
-import './App.css'
+import RoutesApp from './routes/RoutesApp';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>Dashboard React Js</h1>
+      <RoutesApp />
     </>
   )
 }
 
-export default App
+export default App;

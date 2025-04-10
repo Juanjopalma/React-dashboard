@@ -1,3 +1,141 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-body { font-family: "Open Sans", sans-serif; }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body { 
+    font-family: "Open Sans", sans-serif; 
+    background: #EBE9E9;
+}
+
+
+/* Header */
+header {
+    width: 100%; 
+    height: 70px;
+    background: white;
+}
+
+header .row {
+    margin: 0 !important;
+}
+
+/* part 1 */
+header .logo {
+    text-decoration: none;
+}
+
+header .logo img {
+    width: 45px;
+}
+
+header .logo span {
+    color: #292929; font-weight: 800; font-size: 24px;
+}
+
+/* part 2 */
+header button.rounded-circle {
+    min-width: 40px !important;
+    width: 40px !important;
+    height: 40px !important;
+    background: #f0f5ff !important;
+    color: #000;
+    border: none !important;
+}
+
+header button.rounded-circle:hover {
+    color: #0858f7 !important;
+}
+
+header button.rounded-circle svg {
+    color: #292929;
+    font-size: 18px !important;
+    transition: all 0 2s ease-in-out;
+}
+
+
+/* SearchBox */
+.searchBox{
+    width: 400px;
+    height: 40px;
+    background: #f0f5ff;
+    border-radius: 6px;
+    padding: 3px 15px;
+}
+
+.searchBox input {
+    background: transparent;
+    border: 0px;
+    outline: none;
+    padding-left: 0px;
+    font-size: 14px;
+    color: #292929;
+}
+
+.searchBox input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.searchBox svg {
+    font-size: 18px;
+    color: #292929;
+}
+
+
+/* Account */
+.myAcc {
+    text-align: left !important;
+    color: #000 !important;
+    text-transform: capitalize !important;
+}
+
+/* userImg */
+.myAcc .userImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #0858f7;
+    padding: 2px;
+    border-radius: 100%;
+}
+
+.myAcc .userImg .rounded-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+.myAcc .userImg .rounded-circle img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* userInfo */
+.myAcc .userInfo {
+    padding-left: 10px;
+}
+
+.myAcc .userInfo h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.myAcc .userInfo p {
+    margin-top: 0px;
+    font-size: 12px;
+    color: #292929;
+    opacity: 0.7;
+}
